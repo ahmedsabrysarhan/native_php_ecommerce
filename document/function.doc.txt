@@ -1,0 +1,8 @@
+==============================
+=== Function Documentation ===
+==============================
+
+function getAllFrom($field, $table, $alphaBet , $where = NULL, $and = NULL, $order = 'DESC')
+
+$where = NULL => if you want some specific options declare the all var 
+    $where = "WHERE # = ## ";

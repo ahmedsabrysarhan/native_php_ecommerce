@@ -1,0 +1,293 @@
+        /* BACK END CSS LAYOUT  */
+        /* Start General Rules */
+        
+        body {
+            background-color: #f4f4f4;
+            font-size: 16px;
+            position: relative;
+            height: 2000px;
+        }
+        
+        .asterisk {
+            position: relative;
+            font-size: 20px;
+            right: 25px;
+            top: 5px;
+            color: #ea3434;
+        }
+        /* End General Rules */
+        /* Start Bootstrap Design */
+        /* End Bootstrap Design */
+        
+        .form-group {
+            position: relative;
+        }
+        /* Start Nav Bar */
+        
+        .navbar-nav .dropdown-menu {
+            padding: 0;
+            background-color: #0099ff;
+            border: none;
+        }
+        
+        .dropdown-menu {
+            top: 115%;
+            left: 0;
+            z-index: 1000;
+            min-width: 10rem;
+            margin: .125rem 0 0;
+            font-size: 1rem;
+            color: #0099ff;
+            text-align: left;
+            list-style: none;
+        }
+        /* End Nav Bar */
+        /*Start Dashboard Page*/
+        
+        .statestics .stat {
+            border-radius: 10px;
+            padding: 20px;
+            font-size: 15px;
+            color: #FFF;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .statestics i {
+            position: absolute;
+            font-size: 95px;
+            top: 30px;
+            left: 30px;
+        }
+        
+        .statestics .info {
+            float: right;
+        }
+        
+        .statestics .stat a {
+            color: #FFF;
+        }
+        
+        .statestics .stat a:hover {
+            text-decoration: none;
+        }
+        
+        .statestics .st-members {
+            background-color: #0984e3;
+        }
+        
+        .statestics .st-pending {
+            background-color: #d63031;
+        }
+        
+        .statestics .st-items {
+            background-color: #d35400;
+        }
+        
+        .statestics .st-comments {
+            background-color: #8e44ad;
+        }
+        
+        .statestics .stat span {
+            display: block;
+            font-size: 65px;
+        }
+        
+        .card-body {
+            padding: 10px;
+        }
+        
+        .latest .toggle-show {
+            color: #999;
+            cursor: pointer;
+        }
+        
+        .latest .toggle-show:hover {
+            color: #444;
+        }
+        
+        .latest-users,
+        .latest-items {
+            padding: 0;
+        }
+        
+        .latest-users li,
+        .latest-items li {
+            padding: 5px 0;
+            overflow: hidden;
+        }
+        
+        .latest-users li a,
+        .latest-items li a {
+            color: #fff;
+            padding: 3px 8px;
+        }
+        
+        .latest-users li:nth-child(odd),
+        .latest-items li:nth-child(odd) {
+            background-color: #EEE;
+        }
+        
+        .comments .comment-box {
+            margin: 7px 0px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+        
+        .comments .comment-box .comment-owner {
+            float: left;
+            width: 80px;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        .comments .comment-box .comment-com {
+            float: right;
+            width: calc(100% - 100px);
+            position: relative;
+            background-color: #eee;
+            padding: 0 0 0 10px;
+            margin-bottom: 0;
+        }
+        
+        .comments .comment-box .comment-com::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: -20px;
+            top: 2px;
+            border-color: transparent #eee transparent transparent;
+            border-style: solid;
+            border-width: 10px;
+        }
+        
+        .comments .comment-box .btns .btn {
+            padding: 1px 2px;
+            margin: 5px 0px 0px 5px;
+        }
+        /*End Dashboard Page*/
+        /* Start Members Page */
+        
+        .user-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        
+        h1 {
+            font-size: 50px;
+            margin: 40px 0;
+            font-weight: bold;
+            color: #666;
+        }
+        
+        .show-pass:hover {
+            cursor: pointer;
+        }
+        
+        .main-table td {
+            vertical-align: middle !important;
+            background-color: #fff;
+        }
+        
+        .main-table .btn {
+            padding: 3px 12px;
+            margin-left: 7px;
+        }
+        
+        .main-table tr:first-child td {
+            background-color: #333;
+            color: #fff;
+        }
+        /* End Members Page */
+        /* Start Items */
+        
+        .item-image {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        /* End Items */
+        /* Start Categories */
+        
+        .cat-add .ordering span {
+            font-size: 15px;
+        }
+        
+        .cat-add .ordering a:nth-child(2) {
+            font-size: 15px;
+            color: #3f723a;
+        }
+        
+        .cat-add .ordering a:nth-child(3) {
+            font-size: 15px;
+            color: #a72121;
+        }
+        
+        .cat-add .ordering a:hover {
+            text-decoration: none;
+        }
+        
+        .cat-add .ordering a.active {
+            color: red;
+        }
+        /* End Categories */
+        /* Start login*/
+        
+        .login {
+            width: 400px;
+            margin: 100px auto;
+        }
+        
+        .login h4 {
+            color: #525050;
+        }
+        
+        .login input {
+            margin-bottom: 10px;
+        }
+        
+        .login .form-control {
+            background-color: #eaeaea;
+        }
+        
+        .login .btn {
+            background-color: #008dde;
+        }
+        /* End login  */
+        /* Start Footer */
+        
+        .footer-parent {
+            margin-top: 20px;
+            display: block;
+            position: absolute;
+            background-color: #343a40;
+            color: #FFF;
+            padding: 30px;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+        
+        .footer {
+            width: 100%;
+            position: absolute;
+            background-color: #343a40;
+            height: 100%;
+            bottom: 0;
+            left: 0;
+        }
+        /* End Footer */
+        /* Start Responsive Screens */
+        
+        @media screen and (max-width: 996px) {
+            .main-table .btn {
+                padding: 3px 12px;
+                margin: 5px 3px;
+            }
+            .asterisk {
+                position: relative;
+            }
+        }
+        /* End Responsive Screens */

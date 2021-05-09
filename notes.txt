@@ -1,0 +1,80 @@
+=============================
+======== Notes ==============
+=============================
+
+======================================= Start Init File ======================================= 
+
+ini_set('display_errors', 'On');
+error_reporting('E_ALL');
+
+include('dashboard/connect.php');
+
+// Check SESSEION User 
+$sessionUser = "";
+if(isset($_SESSION['user'])){
+    $sessionUser = $_SESSION['user'];
+}
+
+// Routes 
+$tmpls  = 'includes/templs/'; // Templates Directory
+$funcs  = 'includes/funcs/';  // Function Directory   
+$langs  = 'includes/langs/';  // Languages Directory
+$librs  = 'includes/librs/';  // Liberary Directory
+$css    = 'layout/css/';        // Css Directiory
+$js     = 'layout/js/';          // JS Directory 
+
+// Include important files 
+
+include $funcs . "functions.php";
+include $langs . "english.php";     // Language must be include before header 
+include $tmpls . "head.inc.php"; // Including Header + Nav Bar
+
+
+======================================= End Init File ======================================= 
+
+
+== images save in database as Name only >>> but the path will be in special Dir 
+
+== Dom't forget enctype in forms 
+
+== We deal with image by $_FILES[] ===> Not as a normal variables 
+
+======================================= Upload Image ======================================= 
+
+==> <form enctype="multipart/form-data">
+
+ // allowed image extentions
+            $imageAllowedExtentions = array("jpeg", "png", "jpg", "gif");
+
+            // image vars 
+            // => Sort image data in array  
+            $imageName      = $_FILES['image']['name'];
+            $imageType      = $_FILES['image']['type'];
+            $imageTmpName   = $_FILES['image']['tmp_name'];
+            $imageSize      = $_FILES['image']['size'];
+
+            $imageExtention = strtolower(end(explode("." , $imageName)));
+
+            Check Errors : 
+            // If there's image check extenation 
+            if(! empty($imageName) && ! in_array($imageExtention , $imageAllowedExtentions)){
+                $formErrors[] = "This Extention is not ALLOWED";
+            }
+            // Check impty image
+            if(empty($imageName)){
+                $formErrors[] = "Please Upload a product's image";
+            }
+            // Check Image Size 
+            if($imageSize > inMB(4)){
+                $formErrors[] = "Image can't be more than 4MB";
+            }
+
+            // set Image Name 
+
+            $image = rand(0,1000000) . "_" . $imageName;
+            if(isset($image)){
+                $image =  "_" . rand(0,1000) . $image ;
+            }
+            Upload image to file 
+            // use temporary name to move file to upload 
+            move_uploaded_file($imageTmpName , "upload\ads\\" . $image );

@@ -1,0 +1,380 @@
+/* FRONT END CSS LAYOUT */
+
+
+/* Start General Rules */
+
+body {
+    background-color: #f4f4f4;
+    font-size: 16px;
+    height: 3000px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 40px 0;
+    font-weight: bold;
+    color: #666;
+}
+
+.input-container {
+    position: relative;
+}
+
+.asterisk {
+    position: absolute;
+    font-size: 20px;
+    right: 10px;
+    top: 5px;
+    color: #ea3434;
+}
+
+.empty-msg {
+    border-left: 10px solid green;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.card-img-top {
+    height: 230px;
+}
+
+
+/* End General Rules */
+
+
+/* Start Nav Bar */
+
+.navbar {
+    overflow: unset;
+}
+
+.navbar .nav-link {
+    display: inline-block;
+}
+
+.nav-item .login {
+    color: blue !important;
+}
+
+.navbar-nav .dropdown-menu {
+    padding: 0;
+    background-color: #343a40;
+    border: none;
+}
+
+.dropdown-menu {
+    top: 115%;
+    left: 0;
+    z-index: 1000;
+    min-width: 10rem;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    text-align: left;
+    list-style: none;
+}
+
+.dropdown-item {
+    color: #fff;
+    font-size: 14px;
+}
+
+.navbar .my-info img {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
+
+/* End Nav Bar */
+
+
+/*Start Login Page */
+
+.login-page h1 {
+    color: rgb(77, 76, 76);
+}
+
+.login-page h1 .log.selected {
+    color: #0069D9;
+}
+
+.login-page h1 .sign.selected {
+    color: rgb(36, 194, 104);
+}
+
+.login-page h1 span {
+    cursor: pointer;
+}
+
+.login-page form {
+    width: 360px;
+    margin: 20px auto;
+}
+
+.login-page form input {
+    margin-bottom: 10px;
+}
+
+.login-page .signup {
+    display: none;
+}
+
+.login-page .signup .btn {
+    background-color: rgb(36, 194, 104);
+    color: #fff;
+}
+
+.messages .error {
+    max-width: 370px;
+    margin: 10px auto;
+    padding: 7px;
+    background-color: #fff;
+    text-align: start;
+    border-left: red;
+    border-width: 4px;
+    border-left-style: solid;
+}
+
+.messages .success {
+    max-width: 370px;
+    margin: 10px auto;
+    padding: 7px;
+    background-color: #fff;
+    text-align: start;
+    border-left: rgb(35, 177, 35);
+    border-width: 4px;
+    border-left-style: solid;
+}
+
+
+/*End Login Page */
+
+
+/* Start Profile */
+
+.information ul,
+.comments ul {
+    padding: 0;
+    margin: 0;
+}
+
+.information ul li,
+.comments ul li {
+    padding: 10px;
+}
+
+.information ul li:nth-child(odd),
+.comments ul li:nth-child(odd) {
+    background-color: #eee;
+}
+
+.information ul li span {
+    display: inline-block;
+    width: 135px;
+}
+
+.item-content-pro {
+    position: relative;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.item-content-pro .card-body {
+    height: 185px;
+    line-height: 1.15;
+    overflow: auto;
+}
+
+.item-content-pro .active-status {
+    position: absolute;
+    color: #fff;
+    background-color: red;
+    font-size: 12px;
+    padding: 0px 5px;
+    top: 60px;
+    left: 0;
+}
+
+.item-content-pro .date {
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+    text-align: right;
+    font-size: 13px;
+    color: #aaa;
+    font-weight: bold;
+}
+
+
+/*End Profile */
+
+
+/* Start index */
+
+.card-title {
+    margin-bottom: 0;
+}
+
+.item-content-cat {
+    position: relative;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.item-content-cat .card-body {
+    height: 185px;
+    line-height: 1.25;
+    overflow: auto;
+    font-size: 14px;
+}
+
+.item-content-cat .date {
+    position: absolute;
+    right: 25px;
+    bottom: 10px;
+    text-align: right;
+    font-size: 13px;
+    color: #aaa;
+    font-weight: bold;
+}
+
+.item-price {
+    position: absolute;
+    background-color: #756666;
+    padding: 2px 15px;
+    border-radius: initial;
+    top: 20px;
+    left: 0;
+    color: rgb(240, 226, 226);
+}
+
+.item-owner {
+    display: block;
+    margin: 7px 0;
+    padding: 0;
+    border-radius: initial;
+    font-size: 13px;
+    text-align: left;
+}
+
+.item-cat {
+    display: block;
+    margin-bottom: 7px;
+    padding: 0;
+    border-radius: initial;
+    font-size: 13px;
+    text-align: left;
+}
+
+
+/* End index */
+
+
+/* Start New Ad  */
+
+.new-ad form .form-group {
+    position: relative;
+}
+
+.new-ad form .form-group .asterisk {
+    position: absolute;
+    font-size: 20px;
+    right: 75px;
+    top: 5px;
+    color: #ea3434;
+}
+
+
+/* End New Ad  */
+
+
+/* Start Show Items Page */
+
+.item-show h2 {
+    display: inline-block;
+}
+
+.item-show .edit-ad {
+    display: inline-block;
+}
+
+.item-show p {
+    padding: 7px 0;
+}
+
+.item-show ul {
+    margin: 0;
+    padding: 0;
+}
+
+.item-show ul li {
+    padding: 7px 0;
+}
+
+.item-show ul li:nth-child(odd) {
+    background-color: #eee;
+}
+
+.item-show .add-comment textarea {
+    width: 350px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.comment-box {
+    margin-bottom: 10px;
+}
+
+.comment-box img {
+    display: block;
+    max-width: 100px;
+    margin: auto;
+}
+
+.comment-box .lead {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #eee;
+    position: relative;
+}
+
+.comment-box .lead::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -30px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px;
+    border-color: transparent #eee transparent transparent;
+}
+
+
+/* End Show Items Page */
+
+
+/* Start Footer */
+
+.footer-parent {
+    margin-top: 20px;
+    display: block;
+    position: absolute;
+    background-color: #343a40;
+    color: #FFF;
+    padding: 30px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+.footer {
+    width: 100%;
+    position: absolute;
+    background-color: #343a40;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+}
